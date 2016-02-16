@@ -1,5 +1,7 @@
 package com.roy_sun.awesomeshop_imitative;
 
+import com.roy_sun.awesomeshop_imitative.utils.ToastUtils;
+
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -69,17 +71,23 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_home) {
+            ToastUtils.show(this, "点击了首页");
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            ToastUtils.show(this, "点击了分类");
 
         } else if (id == R.id.nav_slideshow) {
+            ToastUtils.show(this, "点击了发现");
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_cart) {
+            ToastUtils.show(this, "点击了购物车");
 
         } else if (id == R.id.nav_share) {
+            ToastUtils.show(this, "点击了分享");
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_manage) {
+            ToastUtils.show(this, "点击了设置");
 
         }
 
