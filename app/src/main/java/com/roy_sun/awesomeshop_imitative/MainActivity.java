@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity
 
         }
 
+        //呵呵！付佳兵是二货 。。。。
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
