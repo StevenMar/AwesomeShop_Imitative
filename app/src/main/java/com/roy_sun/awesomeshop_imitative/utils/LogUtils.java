@@ -1,21 +1,12 @@
 package com.roy_sun.awesomeshop_imitative.utils;
 
+import com.roy_sun.awesomeshop_imitative.conf.Constants;
+
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.itheima.googleplay_18.conf.Constants;
-
 import java.util.List;
 
-/**
- * @author itheima
- * @time 2015-6-23 上午11:33:49
- * @des 日志级别是LEVEL_ALL显示所有信息, 包括System.out.println信息
- * @des 日志级别是LEVEL_OFF关闭所有信息, 包括System.out.println信息
- * @updateAuthor TODO
- * @updateTime TODO
- * @updateDes TODO
- */
 public class LogUtils {
     /**
      * 日志输出时的TAG
@@ -219,21 +210,6 @@ public class LogUtils {
 
     /**---------------日志输出,未固定TAG  end---------------**/
 
-    /**
-     * 把Log存储到文件中
-     *
-     * @param log  需要存储的日志
-     * @param path 存储路径
-     */
-    public static void log2File(String log, String path) {
-        log2File(log, path, true);
-    }
-
-    public static void log2File(String log, String path, boolean append) {
-        synchronized (mLogLock) {
-            FileUtils.writeFile(log + "\r\n", path, append);
-        }
-    }
 
     /**
      * 以级别为 e 的形式输出msg信息,附带时间戳，用于输出一个时间段起始点

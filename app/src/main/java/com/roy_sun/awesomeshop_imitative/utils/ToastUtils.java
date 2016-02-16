@@ -3,11 +3,6 @@ package com.roy_sun.awesomeshop_imitative.utils;
 import android.content.Context;
 import android.widget.Toast;
 
-/**
- * ToastUtils
- * 
- *
- */
 public class ToastUtils {
 
     public static void show(Context context, int resId) {
